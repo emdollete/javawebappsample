@@ -4,7 +4,6 @@ node {
 	}
 	  stage('build') {
 	   sh '''
-	   cd initial
 	   mvn clean package -DskipTests
 	   cd target
 	   cp ../src/main/resources/web.config web.config
