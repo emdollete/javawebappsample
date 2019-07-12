@@ -5,8 +5,8 @@ node {
 	  stage('build') {
 	   sh '''
 	   mvn clean package -DskipTests
-	   rm -rf $CATALINA_HOME/webapps/ROOT
-	   cp target/calculator-1.0.war src/main/webapps/ROOT.war 
+	   rm -rf $CATALINA_HOME/webapp/ROOT
+	   cp target/calculator-1.0.war src/main/webapp/ROOT.war 
 	   '''
 	}
 	stage('deploy') {
