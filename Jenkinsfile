@@ -7,7 +7,7 @@ node {
 	   mvn clean package -DskipTests
 	   cd target
 	   rm -rf $CATALINA_HOME/webapps/ROOT
-	   cp calculator-1.0.war ..src/main/webapps/ROOT.war 
+	   cp calculator-1.0.war ../src/main/webapps/ROOT.war 
 	   '''
 	}
 	stage('deploy') {
